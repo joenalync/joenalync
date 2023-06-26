@@ -18,7 +18,7 @@
 		<title>Web Design and Development Portfolio</title>
 	</head>
 	<body>
-	<?php include "top-menu.php"; ?>
+	<?php include "/top-menu.php"; ?>
 	
 	<div class="wrapper">
 		<div class="row">
