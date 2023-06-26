@@ -1,0 +1,128 @@
+.projCont{
+	margin-top: 20px;
+	overflow: hidden;
+	display: grid;
+	grid-template: auto / auto auto;
+    column-gap: 50px;
+	row-gap: 30px;
+}
+.filterDiv{
+	float: left;
+	color: #ffffff;
+	width: 23vw;
+    height: 45vh;
+	text-align: center;
+	margin: 0px auto 60px;
+	display: none;
+}
+.filterDiv .projInner{
+	position: relative;
+    height: 50vh;
+    overflow: hidden;
+}
+.filterDiv .projInner a img{
+	width: -webkit-fill-available;
+    /*height: 50vh;*/
+    object-fit: cover;
+    display: block;
+	position: absolute;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-ms-transform: translate3d(0px, 0px, 0px);
+	-o-transform: translate3d(0px, 0px, 0px);
+	transform: translate3d(0px, 0px, 0px);
+	-webkit-transition: 3s ease-in-out;
+	-o-transition: 3s ease-in-out;
+	transition: 3s ease-in-out;
+}
+.filterDiv .projName{
+	transition:	all 0.4s ease-out;
+	padding: 15px 5px;
+    background-color: #303337;
+    font-weight: 800;
+    text-transform: uppercase;
+    transform: translate(0%, -98%);
+    color: #68e0cf;
+	opacity: 0;
+}
+.filterDiv:hover .projName{
+	opacity: 1;
+}
+.filterDiv .projName p{
+	margin-bottom: 0px;
+}
+.show{
+	display: block;
+}
+#projFilter{
+	margin: 0 auto;
+    text-align: center;
+}
+.projBtn{
+	border: none;
+	outline: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 2vw;
+	font-size: 14px;
+    font-weight: bold;
+	color: #ffffff;
+}
+.projBtn:hover{
+	background-color: #68e0cf;
+	color: #ffffff !important;
+	border-radius: 64px;
+}
+.projBtn.active{
+	color: #68e0cf;
+    border: 1px solid #68e0cf;
+	border-radius: 64px;
+}
+.unload{
+	display: none;
+}
+.modal {
+    top: 20vh;
+}
+.modalImg img{
+	width: -webkit-fill-available;
+    height: 17vw;
+    object-fit: cover;
+    object-position: top;
+}
+.modalDesc{
+	text-align: left;
+    color: #585d65;
+    margin-top: 20px;
+}
+.modal-body { 
+    padding: 2rem;
+}
+.modal-content {
+	overflow-y: auto;
+}
+@media (min-width: 576px){
+	.modal-dialog {
+		max-width: 50vw;
+	}
+	.modal-content {
+		height: 65vh;
+	}
+}
+/* Modal Scrollbar */
+.modal-content::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #fff;
+}
+.modal-content::-webkit-scrollbar{
+	width: 7px;
+	background-color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.modal-content::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #c7c7c7;
+}

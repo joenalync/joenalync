@@ -1,0 +1,23 @@
+.projCont{
+	margin-top: 20px;
+	overflow: hidden;
+	display: grid;
+	grid-template: auto / auto auto auto !important;
+	grid-template-columns: repeat( auto-fit, minmax(30%, 1fr) ) !important;
+    column-gap: 0px !important;
+	row-gap: 30px;
+}
+.filterDiv{
+	float: left;
+	color: #ffffff;
+	width: 27vw !important;
+    height: 60vh !important;
+	text-align: center;
+	margin: 0px auto 60px;
+	display: none;
+}
+.filterDiv .projInner{
+	position: relative;
+    height: 60vh !important;
+    overflow: hidden;
+}
